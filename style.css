@@ -166,6 +166,9 @@ p{
     .learn a{
         color: white;
     }
+    .body-area{
+        width: 100%;
+    }
     .body-area .images{
         height: 60%;
         margin: 80px;
@@ -177,26 +180,28 @@ p{
         margin-bottom: 24px;
     }
     .images .exp-team{
-        position: absolute;
+        /* position: absolute; */
         left: 0;
         top: 0;
     }
     .images .innovation{
-        position: absolute;
+        /* position: absolute; */
         left: 28%;
         top: 100px;
     }
     .images .client{
-        position: absolute;
+        /* position: absolute; */
         left: 60%;
         top: 0;
     }
     .img1 .exp-team img{
-        height: 28.3%;
-        width: 22%;
+        /* height: 28.3%; */
+        width: 80%;
     }
     .img2 .innovation img{
-        width: 40%;
+        width: 80%;
+        margin: 160px 0 6px;
+        
         /* height: 200px; */
         /* height: 30%; */
     }
@@ -215,8 +220,21 @@ p{
         font-size: 16px;
         line-height: 24.8px;
         margin-bottom: 80px;
+        display: inline;
     }
-
+    .property-details{
+        padding: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .property-details .info h2{
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 62.4px;
+        letter-spacing: -2%;
+        color: var(--black);
+    }
 
     
     /* Body Area Ends */
