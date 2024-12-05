@@ -235,6 +235,94 @@ p{
         letter-spacing: -2%;
         color: var(--black);
     }
+    .property-container{
+        margin: 56px 80px 80px;
+    }
+    .property-wrapper h3{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: var(--black);
+        margin-bottom: 5px;
+    }
+    .property-wrapper p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21.7px;
+        gap: 24px;
+        /* margin-bottom: 80px; */
+    }
+    .home-img{
+        display: inline-flex;
+        /* gap: 15px; */
+        position: relative;
+    }
+    .property-img .home-img .prop1 img{
+        width: 400px;
+        height: 320px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+    .property-wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* gap: 16px; */
+    }
+    .property-wrapper .hover1 a, .hover2 a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 32px 0; */
+        padding: 8px 12px;
+        border: none;
+        border-radius: 22px;
+        font-size: 16px;
+        line-height: 25px;
+        background-color: var(--black);
+        color: var(--white);
+        position: absolute;
+    }
+    .hover1 a{
+        right: 108px;
+        top: 16px;
+    }
+    .hover2 a{
+        right: 16px;
+        top: 16px;
+    }
+    /* .property-wrapper .hover2 a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 22px;
+        font-size: 16px;
+        line-height: 25px;
+        background-color: var(--black);
+        color: var(--white);
+    } */
+    .property-wrapper .hover1{
+        color: var(--white);
+    }
+    .home-img .hover1 img{
+        width: 20px;
+        height: 20px;
+    }
+    .home-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.397);
+    }
+    .home-details .name img{
+        width: 20px;
+        height: 20px;
+    }
+    .property-img .specs{
+        margin-bottom: 20px;
+    }
 
     
     /* Body Area Ends */
