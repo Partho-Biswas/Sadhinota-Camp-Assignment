@@ -1,0 +1,224 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135007,135002,135000');
+:root{
+    --ash: #70707B;
+    --black: #18181B;
+    --white: #ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Satoshi', sans-serif;
+    /* background-color: #70a55d; */
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+p{
+    color: var(--ash);
+}
+@media (min-width: 992px) {
+    /* Hero-Area Starts */
+    /* Navigation Area Starts */
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 83px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+        box-shadow: 0px 13px 63px 0px rgba(0,0,0,0.3);
+        z-index: 2;
+    }
+    nav .logo{
+        padding: 25.5px 80px;
+    }
+    nav .logo img{
+        height: 32px;
+        /* margin: 25.5px 80px; */
+    }
+    header nav .middle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .middle a{
+        margin: 4px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--white);
+        padding: 4px 12px;
+        line-height: 22px;
+    }
+    .contact-us{
+        margin: 19px 80px;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+    /* Navigation Area Ends */
+    
+    .Hero-Area{
+        background-color: black;
+        position: relative;
+    }
+    .bg-img{
+        height: 100vh;
+        width: 100%;
+        background: url(./assets/Home/hero-area-bg.png);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.6;
+        z-index: -1;
+    }
+    .Hero-Area h1{
+        color: white;
+    }
+    .hero-details{
+        display: flex;
+    }
+    .bold-text{
+        margin: 0 78px;
+        font-size: 80px;
+        position: absolute;
+        top: 65%;
+    }
+    .bold-text p{
+        font-weight: 400;
+        line-height: 114px;
+        color: white;
+    }
+    .bold-text span{
+        font-weight: 700;
+    }
+    .bold-text img{
+        position: absolute;
+        height: 80px;
+        right: -10%;
+        top: 60%;
+    }
+    .portrait-img{
+        width: 212px;
+        height: 460px;
+        background-color: rgba(255, 255, 255, 0.24);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        border-radius: 12px;
+        border: 1px;
+        padding: 8px;
+        /* gap: 12px; */
+        top: 30%;
+        right: 5%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .portrait-img img{
+        height: 140px;
+        width: 196px;
+        border-radius: 12px;
+    }
+    /* Hero-Area Starts */
+    /* Body Area Starts */
+    .headlines{
+        margin: 80px 80px;
+        display: flex;
+        justify-content: space-between;
+        height: 40%;
+    }
+    .left-text{
+        width: 50%;
+    }
+    .left-text h1{
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 62.4px;
+        color: var(--black);
+    }
+    .right-text{
+        width: 50%;
+    }
+    .right-text p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 31px;
+    }
+    .learn{
+        margin: 32px 0;
+        padding: 10px 22.5px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        line-height: 25px;
+        background-color: var(--black)
+    }
+    .learn a{
+        color: white;
+    }
+    .body-area .images{
+        height: 60%;
+        margin: 80px;
+        display: flex;
+        position: relative;
+    }
+    .images img{
+        border-radius: 12px;
+        margin-bottom: 24px;
+    }
+    .images .exp-team{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .images .innovation{
+        position: absolute;
+        left: 28%;
+        top: 100px;
+    }
+    .images .client{
+        position: absolute;
+        left: 60%;
+        top: 0;
+    }
+    .img1 .exp-team img{
+        height: 28.3%;
+        width: 22%;
+    }
+    .img2 .innovation img{
+        width: 40%;
+        /* height: 200px; */
+        /* height: 30%; */
+    }
+    .img3 .client img{
+        /* height: 40%; */
+        width: 90%;
+    }
+    .images h2{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-bottom: 8px;
+    }
+    .images p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24.8px;
+        margin-bottom: 80px;
+    }
+
+
+    
+    /* Body Area Ends */
+
+}
