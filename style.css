@@ -88,7 +88,7 @@ p{
         display: flex;
     }
     .bold-text{
-        margin: 0 78px;
+        margin: 0 5%;
         font-size: 80px;
         position: absolute;
         top: 65%;
@@ -132,7 +132,7 @@ p{
     /* Hero-Area Starts */
     /* Body Area Starts */
     .headlines{
-        margin: 80px 80px;
+        margin: 5%;
         display: flex;
         justify-content: space-between;
         height: 40%;
@@ -171,7 +171,7 @@ p{
     }
     .body-area .images{
         height: 60%;
-        margin: 80px;
+        margin: 5%;
         display: flex;
         position: relative;
     }
@@ -223,7 +223,7 @@ p{
         display: inline;
     }
     .property-details{
-        padding: 80px;
+        padding: 5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -236,7 +236,23 @@ p{
         color: var(--black);
     }
     .property-container{
-        margin: 56px 80px 80px;
+        margin: 4% 5% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .property-container .img-view-more{
+        margin: 32px 0;
+        padding: 10px 25.5px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        line-height: 25px;
+        background-color: var(--black)
+    }
+    .img-view-more a{
+        color: white;
     }
     .property-wrapper h3{
         font-weight: 500;
@@ -256,6 +272,7 @@ p{
         display: inline-flex;
         /* gap: 15px; */
         position: relative;
+        padding-right: 2px;
     }
     .property-img .home-img .prop1 img{
         width: 400px;
@@ -314,11 +331,17 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 16px;
         border-bottom: 2px solid rgba(128, 128, 128, 0.397);
     }
     .home-details .name img{
         width: 20px;
         height: 20px;
+    }
+    .home-details .price-time{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
     }
     .property-img .specs{
         margin-bottom: 20px;
