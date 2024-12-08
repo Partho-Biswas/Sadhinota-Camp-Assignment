@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135007,135002,135000');
+@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135005,135009,135007,135002,135000');
 :root{
     --ash: #70707B;
     --black: #18181B;
@@ -23,6 +23,7 @@ ul li{
 p{
     color: var(--ash);
 }
+/* Navigation Area Starts */
 nav{
     position: absolute;
     top: 0;
@@ -63,11 +64,11 @@ header nav .middle{
     border-radius: 12px;
     font-size: 1rem;
 }
-@media (min-width: 992px) {
-    /* Hero-Area Starts */
-    /* Navigation Area Starts */
     
     /* Navigation Area Ends */
+@media (min-width: 992px) {
+    /* Header Area Starts */
+    /* Hero-Area Starts */
     
     .Hero-Area{
         background-color: black;
@@ -130,7 +131,10 @@ header nav .middle{
         width: 196px;
         border-radius: 12px;
     }
-    /* Hero-Area Starts */
+    /* Hero-Area Ends */
+
+    /* Header Area Ends */
+
     /* Body Area Starts */
     .headlines{
         margin: 5%;
@@ -167,6 +171,9 @@ header nav .middle{
     .learn a{
         color: white;
     }
+    /* Hero Area Ends */
+
+    /* Body Area Starts */
     .body-area{
         width: 100%;
     }
@@ -241,6 +248,8 @@ header nav .middle{
     .property-details .brief{
         width: 45%;
     }
+    /* Body Area Ends */
+    /* Property Container Area Starts */
     .property-container{
         margin: 4% 5% 5%;
         display: flex;
@@ -360,6 +369,9 @@ header nav .middle{
         height: 24px;
         margin-right: 5px;
     }
+    /* Property Container Area Ends */
+    
+    /* FAQ Area Starts */
     .faq-container{
         margin: 5%;
 
@@ -406,6 +418,9 @@ header nav .middle{
     .right-mid #talk{
         font-size: 1rem;
     }
+    /* FAQ Area ends */
+
+    /* Real Estate Area Starts */
     .real-estate-container{
         /* margin: 5vw; */
         width: 100%;
@@ -477,16 +492,25 @@ header nav .middle{
     .scroll-arrow .arrow img{
         height: 40px;
     }
+    /* Real Estate Area Ends */
+
+    /* Need Help Area Starts */
     .helping-container{
         width: 100%;
+        position: relative;
     }
     .new{
-        margin: 4.5vw;
+        margin: 1rem;
         background-color: black;
         border-radius: 36px;
         z-index: -3;
     }
+    .help-all{
+        display: flex;
+    }
     .helping-container .help-bg{
+        height: 70vh;
+        width: 100%;
         background-image: url(./assets/Home/help.jpg);
         border-radius: 36px;
         background-size: cover;
@@ -496,26 +520,136 @@ header nav .middle{
     }
     .helping-container .need-help{
         width: 60%;
+        padding: 4.5vw 0 4vw 4vw;
+        position: absolute;
+        left: 3%;
+        top: 6%;
     }
-    .helping-container .need-help h1{
+    .helping-container .help-texts .need-help h1{
         padding-bottom: 10px;
         font-weight: 500;
         font-size: 50px;
-        line-height: 76px;
-        color: white;
+        line-height: 62px;
+        color: var(--white);
         z-index: 3;
     }
     .helping-container .need-help p{
+        width: 70%;
         padding-bottom: 10px;
-        font-weight: 500;
-        font-size: 20px;
+        font-weight:300;
+        font-size: 15px;
         line-height: 31px;
-        color: white;
+        color: var(--white);
         z-index: 3;
     }
-    /* .helping-container .need-help p{
+    .form{
+        width: 28vw;
+        padding: 1.2rem;
+        background-color: white;
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        border-radius: 15px;
+    }
+    .text-box{
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: justify;
+        /* border: 2px solid #E4E4E7; */
+        border: none;
+    }
+    textarea{
+        width: 100%;
+        height: 13rem;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #E4E4E7;
+        border-radius: 6px;
+        background-color: white;
+        font-size: 16px;
+        resize: none;
+    }
+    .form-button .send-button{
+        width: 100%;
+        margin-top: 1rem;
+        padding: 10px 0;
+        border: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        line-height: 25px;
+        background-color: var(--black)
+    }
+    .send-button a{
+        color: white;
+    }
 
-    } */
+    /* Need Help Area Ends */
+    
     /* Body Area Ends */
 
+    /* Footer Starts */
+    footer{
+        height: 450px;
+        width: 100%;
+        padding: 4.5vw;
+        margin-top: 3rem;
+        width: 100%;
+        background-color: black;
+    }
+    .footer-top{
+        /* background-color: pink; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+    }
+    .foot-left{
+        width: 130%;
+        color: white;
+        /* background-color: red; */
+    }
+    .foot-left h6{
+        padding-bottom: 2rem;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px;
+        color: var(--white)
+    }
+    .foot-left td{
+        margin-bottom: 10px;
+    }
+    .collapse{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .foot-mid{
+        width: 40%;
+        color: white;
+    }
+    .foot-mid table tr{
+        font-size: 15px; 
+        height: 2rem; 
+    }
+    .foot-right{
+        width: 15%;
+        color: white;
+    }
+    .foot-right table tr{
+        font-size: 15px; 
+        height: 2rem; 
+    }
+    .end-footer{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-logo img{
+        height: 32px;
+    }
+    /* Footer Starts */
+    
+    
 }
