@@ -1,660 +1,663 @@
-@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135005,135009,135007,135002,135000');
-:root{
-    --ash: #70707B;
-    --black: #18181B;
-    --white: #ffffff;
+@import url("https://fonts.cdnfonts.com/css/satoshi?styles=135005,135009,135007,135002,135000");
+:root {
+  --ash: #70707b;
+  --black: #18181b;
+  --white: #ffffff;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Satoshi', sans-serif;
-    /* background-color: #70a55d; */
+body {
+  font-family: "Satoshi", sans-serif;
+  /* background-color: #70a55d; */
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul li{
-    list-style: none;
+ul li {
+  list-style: none;
 }
-p{
-    color: var(--ash);
+p {
+  color: var(--ash);
 }
 /* Navigation Area Starts */
-nav{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 83px;
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 83px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.2)
+  );
+  box-shadow: 0px 13px 63px 0px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+nav .logo {
+  padding: 25.5px 5vw;
+}
+nav .logo img {
+  height: 32px;
+  /* margin: 25.5px 80px; */
+}
+header nav .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle a {
+  margin: 4px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+  padding: 4px 12px;
+  line-height: 22px;
+}
+.contact-us {
+  margin: 19px 5vw;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+/* Navigation Area Ends */
+/* Header Area Starts */
+/* Hero-Area Starts */
+
+.Hero-Area {
+  background-color: black;
+  position: relative;
+}
+.bg-img {
+  height: 100vh;
+  width: 100%;
+  background: url(./assets/Home/hero-area-bg.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+.Hero-Area h1 {
+  color: white;
+}
+.hero-details {
+  display: flex;
+}
+.bold-text {
+  margin: 0 5%;
+  font-size: 7vw;
+  position: absolute;
+  top: 65%;
+}
+.bold-text p {
+  font-weight: 400;
+  line-height: 114%;
+  color: white;
+}
+.bold-text span {
+  font-weight: 700;
+}
+.bold-text img {
+  position: absolute;
+  height: 33%;
+  right: -8%;
+  top: 60%;
+}
+.portrait-img {
+  width: 212px;
+  height: 460px;
+  background-color: rgba(255, 255, 255, 0.24);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 12px;
+  border: 1px;
+  padding: 8px;
+  /* gap: 12px; */
+  top: 30%;
+  right: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.portrait-img img {
+  height: 140px;
+  width: 196px;
+  border-radius: 12px;
+}
+/* Hero-Area Ends */
+
+/* Header Area Ends */
+
+/* Body Area Starts */
+.headlines {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  height: 40%;
+}
+.left-text {
+  width: 50%;
+}
+.left-text h1 {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62.4px;
+  color: var(--black);
+}
+.right-text {
+  width: 50%;
+}
+.right-text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+}
+.learn {
+  margin: 32px 0;
+  padding: 10px 22.5px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 25px;
+  background-color: var(--black);
+}
+.learn a {
+  color: white;
+}
+/* Hero Area Ends */
+
+/* Body Area Starts */
+.body-area {
+  width: 100%;
+}
+.body-area .images {
+  height: 60%;
+  margin: 5%;
+  display: flex;
+  position: relative;
+}
+.images img {
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.images .exp-team {
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+}
+.images .innovation {
+  /* position: absolute; */
+  left: 28%;
+  top: 100px;
+}
+.images .client {
+  /* position: absolute; */
+  left: 60%;
+  top: 0;
+}
+.img1 .exp-team img {
+  /* height: 28.3%; */
+  width: 80%;
+}
+.img2 .innovation img {
+  width: 80%;
+  margin: 160px 0 6px;
+
+  /* height: 200px; */
+  /* height: 30%; */
+}
+.img3 .client img {
+  /* height: 40%; */
+  width: 90%;
+}
+.images h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-bottom: 8px;
+}
+.images p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24.8px;
+  margin-bottom: 80px;
+  display: inline;
+}
+.property-details {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.property-details .info {
+  width: 55%;
+}
+.property-details .info h2 {
+  font-weight: 400;
+  font-size: 3vw;
+  line-height: 62.4px;
+  color: var(--black);
+}
+.property-details .brief {
+  width: 45%;
+}
+/* Body Area Ends */
+/* Property Container Area Starts */
+.property-container {
+  margin: 4% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.property-container .img-view-more {
+  margin: 32px 0;
+  padding: 10px 25.5px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 25px;
+  background-color: var(--black);
+}
+.img-view-more a {
+  color: white;
+}
+.property-wrapper h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+.property-wrapper p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21.7px;
+  gap: 24px;
+  /* margin-bottom: 80px; */
+}
+.property-img .home-img .prop1 img {
+  width: 400px;
+  height: 320px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+.property-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 16px; */
+}
+.property-wrapper .hover1 a,
+.hover2 a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 32px 0; */
+  padding: 8px 12px;
+  border: none;
+  border-radius: 22px;
+  font-size: 1rem;
+  line-height: 25px;
+  background-color: var(--black);
+  color: var(--white);
+  position: absolute;
+}
+.home-img {
+  display: inline-flex;
+  /* gap: 15px; */
+  position: relative;
+  padding-right: 2px;
+}
+.hover1 a {
+  right: 108px;
+  top: 1rem;
+}
+.hover2 a {
+  right: 1rem;
+  top: 1rem;
+}
+.property-wrapper .hover1 {
+  color: var(--white);
+}
+.home-img .hover1 img {
+  width: 20px;
+  height: 20px;
+}
+.home-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.397);
+}
+.home-details .name img {
+  width: 20px;
+  height: 20px;
+}
+.home-details .price-time {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.property-img .specs {
+  margin: 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.7;
+}
+.property-img .specs img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+/* Property Container Area Ends */
+
+/* FAQ Area Starts */
+.faq-container {
+  margin: 5%;
+}
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+}
+.faq-section .main-faq {
+  width: 45%;
+}
+.faq-info h1 {
+  font-weight: 400;
+  font-size: 4.5vw;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+.faq-info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 31px;
+  margin-bottom: 50px;
+}
+.faq-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+.faq-question {
+  width: 55%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.faq-question p {
+  padding: 4vh 1rem;
+  font-size: 18px;
+}
+.right-mid h4 {
+  margin: 1rem 0;
+  padding: 1rem 1rem 0;
+  font-weight: 700;
+}
+.right-mid #talk {
+  font-size: 1rem;
+}
+/* FAQ Area ends */
+
+/* Real Estate Area Starts */
+.real-estate-container {
+  /* margin: 5vw; */
+  width: 100%;
+}
+.real-estate-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 5%;
+}
+.real-estate-heading .bold {
+  width: 55%;
+}
+.real-estate-heading .bold h1 {
+  font-weight: 400;
+  font-size: 3vw;
+  line-height: 62.4px;
+  color: var(--black);
+}
+.real-estate-heading .summary {
+  width: 45%;
+  font-size: 20px;
+}
+.real-estate-img {
+  margin: 4% 5% 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.real-estate-img .real-house {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2px;
+  margin-bottom: 35px;
+}
+.real-estate-img .img-estate img {
+  width: 400px;
+  height: 320px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+.real-house .date-time span {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24.8px;
+}
+.real-details span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  /* display: inline; */
+}
+.real-house .date-time img {
+  width: 20px;
+  margin: 0 10px;
+}
+.real-estate-container .scroll-arrow {
+  margin: 0 5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scroll-arrow .dot img {
+  height: 12px;
+}
+.scroll-arrow .arrow img {
+  height: 40px;
+}
+/* Real Estate Area Ends */
+
+/* Need Help Area Starts */
+.helping-container {
+  width: 100%;
+  position: relative;
+}
+.new {
+  margin: 1rem;
+  background-color: black;
+  border-radius: 36px;
+  z-index: -3;
+}
+.help-all {
+  display: flex;
+}
+.helping-container .help-bg {
+  height: 70vh;
+  width: 100%;
+  background-image: url(./assets/Home/help.jpg);
+  border-radius: 36px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: 0;
+}
+.helping-container .need-help {
+  width: 60%;
+  padding: 4.5vw 0 4vw 4vw;
+  position: absolute;
+  left: 3%;
+  top: 6%;
+}
+.helping-container .help-texts .need-help h1 {
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 62px;
+  color: var(--white);
+  z-index: 3;
+}
+.helping-container .need-help p {
+  width: 70%;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 31px;
+  color: var(--white);
+  z-index: 3;
+}
+.form {
+  width: 28vw;
+  padding: 1.2rem;
+  background-color: white;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  border-radius: 15px;
+}
+.text-box {
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: justify;
+  /* border: 2px solid #E4E4E7; */
+  border: none;
+}
+.form-box input {
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 1rem;
+}
+textarea {
+  width: 100%;
+  height: 13rem;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #e4e4e7;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 16px;
+  resize: none;
+}
+.form-button .send-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 10px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 25px;
+  background-color: var(--black);
+}
+.send-button a {
+  color: white;
+}
+
+/* Need Help Area Ends */
+
+/* Body Area Ends */
+
+/* Footer Starts */
+footer {
+  height: 450px;
+  width: 100%;
+  padding: 4.5vw;
+  margin-top: 3rem;
+  width: 100%;
+  background-color: black;
+}
+.footer-top {
+  /* background-color: pink; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+}
+.foot-left {
+  width: 130%;
+  color: white;
+  /* background-color: red; */
+}
+.foot-left h6 {
+  padding-bottom: 2rem;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  color: var(--white);
+}
+.foot-left td {
+  margin-bottom: 10px;
+}
+.collapse {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.foot-mid {
+  width: 40%;
+  color: white;
+}
+.foot-mid table tr {
+  font-size: 15px;
+  height: 2rem;
+}
+.foot-right {
+  width: 15%;
+  color: white;
+}
+.foot-right table tr {
+  font-size: 15px;
+  height: 2rem;
+}
+.end-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo img {
+  height: 32px;
+}
+/* Footer Ends */
+
+
+@media (max-width: 992px) {
+  .Hero-Area {
+    background-color: rgb(252, 0, 0);
+    position: relative;
+  }
+  .bg-img {
+    height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
-    box-shadow: 0px 13px 63px 0px rgba(0,0,0,0.3);
-    z-index: 2;
-}
-nav .logo{
-    padding: 25.5px 5vw;
-}
-nav .logo img{
-    height: 32px;
-    /* margin: 25.5px 80px; */
-}
-header nav .middle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.middle a{
-    margin: 4px 12px;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--white);
-    padding: 4px 12px;
-    line-height: 22px;
-}
-.contact-us{
-    margin: 19px 5vw;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-}
-    
-    /* Navigation Area Ends */
-@media (min-width: 992px) {
-    /* Header Area Starts */
-    /* Hero-Area Starts */
-    
-    .Hero-Area{
-        background-color: black;
-        position: relative;
-    }
-    .bg-img{
-        height: 100vh;
-        width: 100%;
-        background: url(./assets/Home/hero-area-bg.png);
-        background-size: cover;
-        background-position: center;
-        opacity: 0.6;
-        z-index: -1;
-    }
-    .Hero-Area h1{
-        color: white;
-    }
-    .hero-details{
-        display: flex;
-    }
-    .bold-text{
-        margin: 0 5%;
-        font-size: 7vw;
-        position: absolute;
-        top: 65%;
-    }
-    .bold-text p{
-        font-weight: 400;
-        line-height: 114%;
-        color: white;
-    }
-    .bold-text span{
-        font-weight: 700;
-    }
-    .bold-text img{
-        position: absolute;
-        height: 33%;
-        right: -8%;
-        top: 60%;
-    }
-    .portrait-img{
-        width: 212px;
-        height: 460px;
-        background-color: rgba(255, 255, 255, 0.24);
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        border-radius: 12px;
-        border: 1px;
-        padding: 8px;
-        /* gap: 12px; */
-        top: 30%;
-        right: 5%;
-        display: flex;
-        justify-content:space-evenly;
-        align-items: center;
-    }
-    .portrait-img img{
-        height: 140px;
-        width: 196px;
-        border-radius: 12px;
-    }
-    /* Hero-Area Ends */
-
-    /* Header Area Ends */
-
-    /* Body Area Starts */
-    .headlines{
-        margin: 5%;
-        display: flex;
-        justify-content: space-between;
-        height: 40%;
-    }
-    .left-text{
-        width: 50%;
-    }
-    .left-text h1{
-        font-weight: 400;
-        font-size: 52px;
-        line-height: 62.4px;
-        color: var(--black);
-    }
-    .right-text{
-        width: 50%;
-    }
-    .right-text p{
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 31px;
-    }
-    .learn{
-        margin: 32px 0;
-        padding: 10px 22.5px;
-        border: none;
-        border-radius: 12px;
-        font-size: 1rem;
-        line-height: 25px;
-        background-color: var(--black)
-    }
-    .learn a{
-        color: white;
-    }
-    /* Hero Area Ends */
-
-    /* Body Area Starts */
-    .body-area{
-        width: 100%;
-    }
-    .body-area .images{
-        height: 60%;
-        margin: 5%;
-        display: flex;
-        position: relative;
-    }
-    .images img{
-        border-radius: 12px;
-        margin-bottom: 24px;
-    }
-    .images .exp-team{
-        /* position: absolute; */
-        left: 0;
-        top: 0;
-    }
-    .images .innovation{
-        /* position: absolute; */
-        left: 28%;
-        top: 100px;
-    }
-    .images .client{
-        /* position: absolute; */
-        left: 60%;
-        top: 0;
-    }
-    .img1 .exp-team img{
-        /* height: 28.3%; */
-        width: 80%;
-    }
-    .img2 .innovation img{
-        width: 80%;
-        margin: 160px 0 6px;
-        
-        /* height: 200px; */
-        /* height: 30%; */
-    }
-    .img3 .client img{
-        /* height: 40%; */
-        width: 90%;
-    }
-    .images h2{
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28.8px;
-        margin-bottom: 8px;
-    }
-    .images p{
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 24.8px;
-        margin-bottom: 80px;
-        display: inline;
-    }
-    .property-details{
-        padding: 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .property-details .info{
-        width: 55%;
-    }
-    .property-details .info h2{
-        font-weight: 400;
-        font-size: 3vw;
-        line-height: 62.4px;
-        color: var(--black);
-    }
-    .property-details .brief{
-        width: 45%;
-    }
-    /* Body Area Ends */
-    /* Property Container Area Starts */
-    .property-container{
-        margin: 4% 5% 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .property-container .img-view-more{
-        margin: 32px 0;
-        padding: 10px 25.5px;
-        border: none;
-        border-radius: 12px;
-        font-size: 1rem;
-        line-height: 25px;
-        background-color: var(--black)
-    }
-    .img-view-more a{
-        color: white;
-    }
-    .property-wrapper h3{
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 28.8px;
-        color: var(--black);
-        margin-bottom: 5px;
-    }
-    .property-wrapper p{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 21.7px;
-        gap: 24px;
-        /* margin-bottom: 80px; */
-    }
-    .property-img .home-img .prop1 img{
-        width: 400px;
-        height: 320px;
-        border-radius: 12px;
-        margin-bottom: 1rem;
-    }
-    .property-wrapper{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        /* gap: 16px; */
-    }
-    .property-wrapper .hover1 a, .hover2 a{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        /* margin: 32px 0; */
-        padding: 8px 12px;
-        border: none;
-        border-radius: 22px;
-        font-size: 1rem;
-        line-height: 25px;
-        background-color: var(--black);
-        color: var(--white);
-        position: absolute;
-    }
-    .home-img{
-        display: inline-flex;
-        /* gap: 15px; */
-        position: relative;
-        padding-right: 2px;
-    }
-    .hover1 a{
-        right: 108px;
-        top: 1rem;
-    }
-    .hover2 a{
-        right: 1rem;
-        top: 1rem;
-    }
-    /* .property-wrapper .hover2 a{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        padding: 8px 12px;
-        border: none;
-        border-radius: 22px;
-        font-size: 16px;
-        line-height: 25px;
-        background-color: var(--black);
-        color: var(--white);
-    } */
-    .property-wrapper .hover1{
-        color: var(--white);
-    }
-    .home-img .hover1 img{
-        width: 20px;
-        height: 20px;
-    }
-    .home-details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid rgba(128, 128, 128, 0.397);
-    }
-    .home-details .name img{
-        width: 20px;
-        height: 20px;
-    }
-    .home-details .price-time{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-    }
-    .property-img .specs{
-        margin: 20px 5px;
-        display: flex;
-        justify-content: space-between;
-        opacity: 0.7;
-    }
-    .property-img .specs img{
-        width: 24px;
-        height: 24px;
-        margin-right: 5px;
-    }
-    /* Property Container Area Ends */
-    
-    /* FAQ Area Starts */
-    .faq-container{
-        margin: 5%;
-
-    }
-    .faq-section{
-        display: flex;
-        justify-content: space-between;
-    }
-    .faq-section .main-faq{
-        width: 45%;
-    }
-    .faq-info h1{
-        font-weight: 400;
-        font-size: 4.5vw;
-        color: var(--black);
-        margin-bottom: 5px;
-    }
-    .faq-info p{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 31px;
-        margin-bottom: 50px;
-    }
-    .faq-img img{
-        width: 100%;
-        border-radius: 12px;
-    }
-    .faq-question{
-        width: 55%;
-        margin-left:5%;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .faq-question p{
-        padding: 4vh 1rem;
-        font-size: 18px;
-    }
-    .right-mid h4{
-        margin: 1rem 0;
-        padding: 1rem 1rem 0;
-        font-weight: 700;
-    }
-    .right-mid #talk{
-        font-size: 1rem;
-    }
-    /* FAQ Area ends */
-
-    /* Real Estate Area Starts */
-    .real-estate-container{
-        /* margin: 5vw; */
-        width: 100%;
-    }
-    .real-estate-heading{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5% 5%;
-    }
-    .real-estate-heading .bold{
-        width: 55%;
-    }
-    .real-estate-heading .bold h1{
-        font-weight: 400;
-        font-size: 3vw;
-        line-height: 62.4px;
-        color: var(--black);
-    }
-    .real-estate-heading .summary{
-        width: 45%;
-        font-size: 20px;
-    }
-    .real-estate-img{
-        margin: 4% 5% 0;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .real-estate-img .real-house{
-        display: flex;
-        flex-direction: column;
-        padding-right: 2px;
-        margin-bottom: 35px;
-    }
-    .real-estate-img .img-estate img{
-        width: 400px;
-        height: 320px;
-        border-radius: 12px;
-        margin-bottom: 1rem;
-    }
-    .real-house .date-time span{
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 24.8px;
-        
-    }
-    .real-details span{
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 28.8px;
-        /* display: inline; */
-        
-    }
-    .real-house .date-time img{
-        width: 20px;
-        margin: 0 10px;
-    }
-    .real-estate-container .scroll-arrow{
-        margin: 0 5rem 2.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .scroll-arrow .dot img{
-        height: 12px;
-    }
-    .scroll-arrow .arrow img{
-        height: 40px;
-    }
-    /* Real Estate Area Ends */
-
-    /* Need Help Area Starts */
-    .helping-container{
-        width: 100%;
-        position: relative;
-    }
-    .new{
-        margin: 1rem;
-        background-color: black;
-        border-radius: 36px;
-        z-index: -3;
-    }
-    .help-all{
-        display: flex;
-    }
-    .helping-container .help-bg{
-        height: 70vh;
-        width: 100%;
-        background-image: url(./assets/Home/help.jpg);
-        border-radius: 36px;
-        background-size: cover;
-        background-position: center;
-        opacity: 0.6;
-        z-index: 0;
-    }
-    .helping-container .need-help{
-        width: 60%;
-        padding: 4.5vw 0 4vw 4vw;
-        position: absolute;
-        left: 3%;
-        top: 6%;
-    }
-    .helping-container .help-texts .need-help h1{
-        padding-bottom: 10px;
-        font-weight: 500;
-        font-size: 50px;
-        line-height: 62px;
-        color: var(--white);
-        z-index: 3;
-    }
-    .helping-container .need-help p{
-        width: 70%;
-        padding-bottom: 10px;
-        font-weight:300;
-        font-size: 15px;
-        line-height: 31px;
-        color: var(--white);
-        z-index: 3;
-    }
-    .form{
-        width: 28vw;
-        padding: 1.2rem;
-        background-color: white;
-        position: absolute;
-        right: 5%;
-        top: 10%;
-        border-radius: 15px;
-    }
-    .text-box{
-        padding-bottom: 10px;
-        width: 100%;
-        text-align: justify;
-        /* border: 2px solid #E4E4E7; */
-        border: none;
-    }
-    .form-box input{
-        width: 100%;
-        height: 2.5rem;
-        padding-left: 1rem;
-    }
-    textarea{
-        width: 100%;
-        height: 13rem;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #E4E4E7;
-        border-radius: 6px;
-        background-color: white;
-        font-size: 16px;
-        resize: none;
-    }
-    .form-button .send-button{
-        width: 100%;
-        margin-top: 1rem;
-        padding: 10px 0;
-        border: none;
-        border-radius: 12px;
-        font-size: 1rem;
-        line-height: 25px;
-        background-color: var(--black)
-    }
-    .send-button a{
-        color: white;
-    }
-
-    /* Need Help Area Ends */
-    
-    /* Body Area Ends */
-
-    /* Footer Starts */
-    footer{
-        height: 450px;
-        width: 100%;
-        padding: 4.5vw;
-        margin-top: 3rem;
-        width: 100%;
-        background-color: black;
-    }
-    .footer-top{
-        /* background-color: pink; */
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 3rem;
-        border-bottom: 1px solid rgba(128, 128, 128, 0.6);
-    }
-    .foot-left{
-        width: 130%;
-        color: white;
-        /* background-color: red; */
-    }
-    .foot-left h6{
-        padding-bottom: 2rem;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 38px;
-        color: var(--white)
-    }
-    .foot-left td{
-        margin-bottom: 10px;
-    }
-    .collapse{
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .foot-mid{
-        width: 40%;
-        color: white;
-    }
-    .foot-mid table tr{
-        font-size: 15px; 
-        height: 2rem; 
-    }
-    .foot-right{
-        width: 15%;
-        color: white;
-    }
-    .foot-right table tr{
-        font-size: 15px; 
-        height: 2rem; 
-    }
-    .end-footer{
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .footer-logo img{
-        height: 32px;
-    }
-    /* Footer Starts */
-    
-    
+    background: url(./assets/Home/hero-area-bg.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+  }
 }
