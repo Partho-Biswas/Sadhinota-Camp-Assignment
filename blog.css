@@ -1,0 +1,75 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135007,135008,135002,135000");
+:root {
+  --ash: #70707b;
+  --black: #18181b;
+  --white: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  /* background-color: #70a55d; */
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+p {
+  color: var(--ash);
+  font-size: 18px;
+  line-height: 27.9px;
+}
+/* Navigation Area Starts */
+nav {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  height: 83px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.2)
+  ); */
+  /* box-shadow: 0px 13px 63px 0px rgba(0, 0, 0, 0.3); */
+  z-index: 2;
+}
+nav .logo {
+  padding: 25.5px 5vw;
+}
+nav .logo img {
+  height: 32px;
+  /* margin: 25.5px 80px; */
+}
+header nav .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle a {
+  margin: 4px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ash);
+  padding: 4px 12px;
+  line-height: 22px;
+}
+.contact-us {
+  margin: 19px 5vw;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--black);
+}
+
