@@ -141,6 +141,9 @@ header nav .middle {
   align-items: center;
   background-color: #18181b;
   border-radius: 12px;
+  /* color: white; */
+}
+.property-wrapping .sell-rent .sell a{
   color: white;
 }
 .property-wrapping .sell-rent .rent {
@@ -149,6 +152,9 @@ header nav .middle {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
+}
+.property-wrapping .sell-rent .rent a{
+  color: black;
 }
 .property-wrapping .category h4 {
   font-size: 20px;
